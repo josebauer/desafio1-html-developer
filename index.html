@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Página principal</title>
+    </head>
+
+    <body>
+        <h1 id="inicio">Formação HTML Developer</h1>
+        <hr/>
+
+        <h2>Índice</h2>
+        <ul>
+            <li>
+                <a href="#client-server">Client x Server</a>
+            </li>
+            <li>
+                <a href="#tipos-servers">Tipos de Servers</a>
+            </li>
+            <li>
+                <a href="#hospedagem">Hospedagem de Sites</a>
+            </li>
+            <li>
+                <a href="#tags">Tags HTML</a>
+            </li>
+            <li>
+                <a href="#referencias">Referências</a>
+            </li>
+            <li>
+                <a href="rodape">Notas de Rodapé</a>
+            </li>
+        </ul>
+        <hr/>
+
+        <h2 id="client-server">Client x Server</h2><br/>
+
+        <h3>Client</h3>
+
+        <p>
+            Client é o dispositivo que está consumindo uma informação da internet que vem de algum lugar, no caso, do servidor. Quando acessamos um site na internet, a requisição <strong>HTTP<sup>*</sup></strong> vai até o servidor e retorna para o client arquivos HTML, CSS, JS, imagens, áudio etc. Esses arquivos são denominados arquivos estáticos. O carregamento desses arquivos vai depender da velocidade da internet do client, assim arquivos muito grandes e pesados podem ser prejudiciais para usuários com conexão lenta de internet. Esses arquivos são guardados na memória cache do navegador, pois quando for acessar o site outra vez, basta pegar esses arquivos que já estão no computador do usuário e carregar o site, assim acaba não precisando ir buscar novamente o arquivo no servidor, evitando um tráfego inútil.
+        </p><br/>
+
+        <h3>Server</h3>
+
+        <p>
+            Servidor não é apenas por internet, mas também pode haver numa rede local. Por exemplo, numa empresa que possui vários computadores, terá um computador central com determinados arquivos que se comunica com os outros computadores via rede local. Geralmente o servidor não envia dados se o cliente não disparar primeiro uma requisição.
+        </p>
+        <hr/>
+
+        <h2 id="tipos-servers">Tipos de Servers</h2>
+        <small><a href="#inicio">Voltar ao início</a></small><br/>
+
+        <h3>Servidor Proxy</h3>
+        <p>
+            É um servidor usado em empresas para determinar certas regras de segurança dentro da empresa, por exemplo, esse servidor pode bloquear determinados sites maliciosos que o empregador não quer que os funcionários acessem. 
+            Esse servidor funciona da seguinte maneira: O usuário entra em um site, mas antes da requisição chegar na internet, o servidor proxy analisa se o site é permitido o acesso, se caso não for, ele bloqueia e não deixa o usuário acessar. O servidor Proxy pode também ser usado para autenticação de usuário e senha para liberar certos acessos para diferentes pessoas. Um problema que pode ocorrer com esses servidores, é o Proxy liberar o acesso, a requisição é feita ao servidor web, mas na hora do HTML voltar para o client acaba sendo bloqueado pelo Proxy. 
+        </p><br/>
+
+        <h3>Servidor Firewall</h3>
+        <p>
+            Também é um servidor de segurança, porém é voltado para acesso externo. Ele bloqueia caso algum client externo tente mandar um arquivo malicioso para aquela rede.
+        </p><br/>
+
+        <h3>Servidor Web</h3>
+        <p>
+            O Servidor possui um sistema operacional e nesse sistema operacional tem um servidor web instalado, como Apache ou Nginx que vai trabalhar com as requisições HTTP que vierem da internet.
+            Podemos ter um computador com um servidor web ou podemos contratar um plano de servidor web para podermos hospedar nossos sites. Há também servidor web sem conexão com a internet, só em rede local onde o servidor web é conectado a um data base e aos computadores apenas pela rede local, não sendo possível ser acessado fora daquele ambiente.
+        </p><br/>
+
+        <h3>Servidor de E-mail</h3>
+        <p>
+            É um servidor como os outros, mas usado para armazenar os e-mails
+        </p></br>
+
+        <h3>Servidor Data Base</h3>
+        <p>
+            É um servidor usado para acesso e comunicação de outros servidores, onde são guardadas informações das aplicações web. Por exemplo, um e-commerce está hospedado num servidor web, mas as informações de preço, produtos etc devem ser salvadas em outro servidor, no caso em um data base. 
+        </p><br/>
+
+        <h3>Servidor DNS</h3>
+        <p>
+            É um servidor que detém uma lista de nomes e IP’s. Ele serve para traduzir o endereço de um site, vê qual IP é relacionando com o endereço, assim ele direciona para esse IP. Ou seja, o servidor DNS serve para redirecionar o nome para um IP específico.
+        </p><br/><hr/>
+
+        <h2 id="hospedagem">Hospedagem de Sites</h2>
+        <small><a href="#inicio">Voltar ao início</a></small><br/>
+
+        <p>Hospedagem É colocar os arquivos de um site em um servidor para que fique disponível para os clients acessarem. Ela funciona como um aluguel de um espaço digital para armazenar seus arquivos, pois para ter um site é necessário mantê-lo 24 horas online. Para que você tenha uma Hospedagem de Sites barata e com o melhor custo-benefício, é aí que entram as prestadoras de Hospedagem de Sites, com um datacenter com diversos servidores, resfriamento e gerenciamento.</p><br/><hr/>
+
+        <h2 id="tags">Tags HTML</h2>
+        <small><a href="#inicio">Voltar ao início</a></small><br/>
+
+        <h3>< ! DOCTYPE ></h3> 
+        <p>
+            Define o tipo do documento, usado da seguinte forma: < ! DOCTYPE html >
+        </p><br/>
+        
+        <h3>< head ></h3>
+        <p>
+            Contem as informações do documento.
+        </p></br/>
+
+        <h3>< body ></h3>
+        <p>
+            É o corpo do documento, todo o conteúdo ficará nele.
+        </p><br/>
+
+        <h3>< ol ></h3>
+        <p>
+            Cria uma lista ordenada.
+        </p><br/>
+
+        <h3>< ul ></h3>
+        <p>
+            Cria uma lista não ordenada.
+        </p><br/>
+
+        <h3>< li ></h3>
+        <p>
+            Define um item da lista.
+        </p></br>
+
+        <h3>< a ></h3>
+        <p>
+            Define um hyperlink, podendo encaminhar para um conteúdo de outra página, ou também para dentro da mesma mas em outra sessão.
+        </p><br/>
+
+        <h3>Esses foram alguns exemplos de tags em HTML, mas existem vários outros.</h3><br/><hr/>
+
+
+        <h2 id="referencias">Referências</h2>
+        <small><a href="#inicio">Voltar ao início</a></small><br/>
+
+        <ul>
+            <li>
+                <a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215" target="_blank" title="Clique aqui e confira!">Cliente x Servidor</a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/tags/default.asp" target="_blank" title="Clique aqui e confira!">Tags HTML</a>
+            </li>
+            <li>
+                <a href="https://www.locaweb.com.br/conteudos/o-que-e-hospedagem-de-site/" target="_blank" title="Clique aqui e confira!">Hospedagem de Sites</a>
+            </li>
+        </ul>
+        <br/><hr/>
+
+        <h2 id="rodape">Notas de Rodapé</h2>
+        <small><a href="#inicio">Voltar ao início</a></small><br/>
+
+        <p><strong>HTTP</strong>(Hypertext Transfer Protocol) é o protocolo base para as aplicações web e clientes (como aplicativos mobile, entre outros) que se conectam a web APIs. Ele permite a comunicação entre clientes e servidores através da internet.</p>
+        <br/>
+        
+    </body>
+</html>
